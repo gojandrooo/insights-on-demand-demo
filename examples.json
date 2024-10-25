@@ -1,0 +1,54 @@
+[
+    {
+        "input": "What is the average check for each Product Name?",
+        "query": "SELECT product_margin.product_name, AVG(order_summary.net_sales) AS avg_check FROM order_summary INNER JOIN product_margin ON order_item.product_id = product_margin.product_id INNER JOIN order_item ON order_summary.transaction_id = order_item.transaction_id GROUP BY product_margin.product_name ORDER BY avg_check DESC;"
+    }
+    ,{
+        "input": "What are the top three products sold in each daypart?",
+        "query": "WITH ranked_products AS (SELECT dim_daypart.daypart, product_margin.product_name, SUM(order_item.product_quantity) AS total_quantity, ROW_NUMBER() OVER (PARTITION BY dim_daypart.daypart ORDER BY SUM(order_item.product_quantity) DESC) AS rank FROM order_item JOIN product_margin ON order_item.product_id = product_margin.product_id JOIN order_summary ON order_item.transaction_id = order_summary.transaction_id JOIN dim_daypart ON order_summary.order_time = dim_daypart.minute_id GROUP BY dim_daypart.daypart, product_margin.product_name) SELECT daypart, product_name, total_quantity FROM ranked_products WHERE rank <= 3 ORDER BY CASE daypart WHEN 'Breakfast' THEN 1 WHEN 'Lunch' THEN 2 WHEN 'Snack' THEN 3 WHEN 'Dinner' THEN 4 WHEN 'Latenight' THEN 5 END, total_quantity DESC;"
+    }
+    ,{
+        "input": "Which Store sold the most waffle fries by quantity?",
+        "query": "SELECT locations.dma_name, locations.store_id, SUM(order_item.product_quantity) AS total_waffle_fries FROM order_item JOIN product_margin ON order_item.product_id = product_margin.product_id JOIN order_summary ON order_item.transaction_id = order_summary.transaction_id JOIN locations ON order_summary.store_id = locations.store_id WHERE product_margin.product_line = 'waffle_fries' GROUP BY locations.dma_name, locations.store_id ORDER BY total_waffle_fries DESC;"
+    }
+    ,{
+        "input": "What is the average check over time? Aggregate by day",
+        "query": "SELECT order_summary.date, AVG(order_summary.net_sales) AS avg_check FROM order_summary GROUP BY order_summary.date ORDER BY order_summary.date;"
+    }
+    ,{
+        "input": "what is the average check over time by DMA?",
+        "query": "SELECT order_summary.date, locations.dma_name, AVG(order_summary.net_sales) AS avg_check FROM order_summary JOIN locations ON order_summary.store_id = locations.store_id GROUP BY order_summary.date, locations.dma_name ORDER BY order_summary.date;"
+    }
+    ,{
+        "input": "What are the top 5 stores for most pies sold in July 2024?",
+        "query": "SELECT locations.dma_name, locations.store_id, SUM(order_item.product_quantity) AS total_pies FROM order_item JOIN product_margin ON order_item.product_id = product_margin.product_id JOIN order_summary ON order_item.transaction_id = order_summary.transaction_id JOIN locations ON order_summary.store_id = locations.store_id WHERE product_margin.sub_category = 'pie' AND order_summary.date BETWEEN '2024-07-01' AND '2024-07-31' GROUP BY locations.dma_name, locations.store_id ORDER BY total_pies DESC LIMIT 5;"
+    }
+    ,{
+        "input": "what does the location data look like?",
+        "query": "SELECT * FROM locations LIMIT 5;"
+    }
+    ,{
+        "input": "what does the product data look like?",
+        "query": "SELECT * FROM product_margin LIMIT 5;"
+    }
+    ,{
+        "input": "what are the top 10 products sold in the Philadelphia DMA?",
+        "query": "SELECT product_margin.product_name, CAST(SUM(order_item.product_quantity) AS INTEGER) AS total_sold FROM order_item JOIN product_margin ON order_item.product_id = product_margin.product_id JOIN order_summary ON order_item.transaction_id = order_summary.transaction_id JOIN locations ON order_summary.store_id = locations.store_id WHERE locations.dma_name = 'Philadelphia' GROUP BY product_margin.product_name ORDER BY total_sold DESC LIMIT 10;"
+    }
+    ,{
+        "input": "what are the total sales by store and date?",
+        "query": "SELECT order_summary.date, locations.store_id, SUM(order_summary.net_sales) AS total_sales FROM order_summary JOIN locations ON order_summary.store_id = locations.store_id GROUP BY order_summary.date, locations.store_id ORDER BY order_summary.date, locations.store_id;"
+    }
+    ,{
+        "input": "what are the monthly sales for store 77?",
+        "query": "SELECT strftime('%Y-%m', order_summary.date) AS month, SUM(order_summary.net_sales) AS total_sales FROM order_summary JOIN locations ON order_summary.store_id = locations.store_id WHERE locations.store_id = 77 GROUP BY month ORDER BY month;"
+    }
+    ,{
+        "input": "how many items on average are included on checks that contain a beef loco moco?",
+        "query": "SELECT AVG(item_count) AS avg_items_per_check FROM (SELECT order_summary.transaction_id, SUM(order_item.product_quantity) AS item_count FROM order_summary JOIN order_item ON order_summary.transaction_id = order_item.transaction_id JOIN product_margin ON order_item.product_id = product_margin.product_id WHERE product_margin.product_name = 'beef_loco_moco' GROUP BY order_summary.transaction_id) AS subquery;"
+    }
+    ,{
+        "input": "what were the top 10 products sold in Los Angeles in September 2024?",
+        "query": "SELECT product_margin.product_name, CAST(SUM(order_item.product_quantity) AS INTEGER) AS total_sold FROM order_item JOIN product_margin ON order_item.product_id = product_margin.product_id JOIN order_summary ON order_item.transaction_id = order_summary.transaction_id JOIN locations ON order_summary.store_id = locations.store_id WHERE locations.dma_name = 'Los Angeles' AND order_summary.date BETWEEN '2024-09-01' AND '2024-09-30' GROUP BY product_margin.product_name ORDER BY total_sold DESC LIMIT 10;"
+    }
+]

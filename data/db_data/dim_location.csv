@@ -1,0 +1,101 @@
+store_id,street_address,city,zip_code,dma_name,franchise_owner,franchise_name
+0001,123 Main St,Lindaview,10178,New York,Annette Turner,Turner Food Inc
+0002,124 Main St,Deannaland,60304,Chicago,Alexis Jefferson,Jefferson Food Inc
+0003,125 Main St,Port Kaylaville,19006,Philadelphia,Amanda Greene,Greene Food Inc
+0004,126 Main St,West William,15209,Pittsburgh,Corey Prince,Prince Food Inc
+0005,127 Main St,East Stevenland,05141,Boston (Manchr),Melissa Johnson,Johnson Food Inc
+0006,128 Main St,Deannaland,60304,Chicago,Ronald Patel,Patel Food Inc
+0007,129 Main St,West William,15209,Pittsburgh,Shane Kim,Kim Food Inc
+0008,130 Main St,Richardfurt,75117,Dallas-Ft.Worth,Angie Coleman,Coleman Food Inc
+0009,131 Main St,West Joshuachester,55553,Mineapls-St. Pl,Latoya House,House Food Inc
+0010,132 Main St,Lake Matthewshire,02205,Boston (Manchr),Travis Frye,Frye Food Inc
+0011,133 Main St,East Jennifermouth,16018,Pittsburgh,Natalie Meyer,Meyer Food Inc
+0012,134 Main St,Richardfurt,75117,Dallas-Ft.Worth,Valerie Rodriguez,Rodriguez Food Inc
+0013,135 Main St,Lake Matthewshire,02205,Boston (Manchr),Alexis Jefferson,Jefferson Food Inc
+0014,136 Main St,Suzannetown,02667,Boston (Manchr),Anthony Jackson,Jackson Food Inc
+0015,137 Main St,Wiseport,60516,Chicago,Melissa Johnson,Johnson Food Inc
+0016,138 Main St,Wiseport,60516,Chicago,Diane Daniels,Daniels Food Inc
+0017,139 Main St,Haynesville,19802,Philadelphia,Sarah Morris,Morris Food Inc
+0018,140 Main St,West Joshuachester,55553,Mineapls-St. Pl,Kelly Mora,Mora Food Inc
+0019,141 Main St,Jonesfurt,01525,Boston (Manchr),Johnny Vargas,Vargas Food Inc
+0020,142 Main St,Christopherfort,75253,Dallas-Ft.Worth,Diane Daniels,Daniels Food Inc
+0021,143 Main St,Ashleybury,90746,Los Angeles,Melissa Johnson,Johnson Food Inc
+0022,144 Main St,East Jennifermouth,16018,Pittsburgh,Travis Frye,Frye Food Inc
+0023,145 Main St,New Lindsay,19179,Philadelphia,Cynthia Lee,Lee Food Inc
+0024,146 Main St,Lindaview,10178,New York,Norman Martin,Martin Food Inc
+0025,147 Main St,Lindaview,10178,New York,Amanda Greene,Greene Food Inc
+0026,148 Main St,Richardfurt,75117,Dallas-Ft.Worth,Jennifer Reyes,Reyes Food Inc
+0027,149 Main St,East Stevenland,05141,Boston (Manchr),Angie Coleman,Coleman Food Inc
+0028,150 Main St,Lindaview,10178,New York,Robert Robinson,Robinson Food Inc
+0029,151 Main St,Timothyview,75392,Dallas-Ft.Worth,Cynthia Lee,Lee Food Inc
+0030,152 Main St,Wiseport,60516,Chicago,Kristen Gomez,Gomez Food Inc
+0031,153 Main St,Christopherfort,75253,Dallas-Ft.Worth,Matthew Harrison,Harrison Food Inc
+0032,154 Main St,West Joshuachester,55553,Mineapls-St. Pl,Brooke Young,Young Food Inc
+0033,155 Main St,New Lindsay,19179,Philadelphia,Ronald Patel,Patel Food Inc
+0034,156 Main St,West William,15209,Pittsburgh,Susan Hansen,Hansen Food Inc
+0035,157 Main St,Deannaland,60304,Chicago,Brooke Young,Young Food Inc
+0036,158 Main St,Amymouth,10453,New York,Angie Coleman,Coleman Food Inc
+0037,159 Main St,Haynesville,19802,Philadelphia,Michael Cook,Cook Food Inc
+0038,160 Main St,East Stevenland,05141,Boston (Manchr),Andre Cruz,Cruz Food Inc
+0039,161 Main St,North Kevintown,93032,Los Angeles,Melissa Johnson,Johnson Food Inc
+0040,162 Main St,Greeneview,12409,New York,Ronald Patel,Patel Food Inc
+0041,163 Main St,Ashleybury,90746,Los Angeles,Diane Daniels,Daniels Food Inc
+0042,164 Main St,Lake Matthewshire,02205,Boston (Manchr),Amanda Greene,Greene Food Inc
+0043,165 Main St,Lake Matthewshire,02205,Boston (Manchr),Melissa Johnson,Johnson Food Inc
+0044,166 Main St,North Kevintown,93032,Los Angeles,Melissa Johnson,Johnson Food Inc
+0045,167 Main St,Port Kaylaville,19006,Philadelphia,Valerie Rodriguez,Rodriguez Food Inc
+0046,168 Main St,Christopherfort,75253,Dallas-Ft.Worth,Matthew Harrison,Harrison Food Inc
+0047,169 Main St,Deannaland,60304,Chicago,Johnny Vargas,Vargas Food Inc
+0048,170 Main St,North Kevintown,93032,Los Angeles,Latoya House,House Food Inc
+0049,171 Main St,Seanside,93549,Los Angeles,Robert Wagner,Wagner Food Inc
+0050,172 Main St,Port Kaylaville,19006,Philadelphia,Ms. April Bradley,April Food Inc
+0051,173 Main St,Timothyview,75392,Dallas-Ft.Worth,Christopher Morgan,Morgan Food Inc
+0052,174 Main St,East Jennifermouth,16018,Pittsburgh,Annette Turner,Turner Food Inc
+0053,175 Main St,Richardfurt,75117,Dallas-Ft.Worth,Andre Cruz,Cruz Food Inc
+0054,176 Main St,West William,15209,Pittsburgh,Ronald Patel,Patel Food Inc
+0055,177 Main St,West Joshuachester,55553,Mineapls-St. Pl,Jamie Adams,Adams Food Inc
+0056,178 Main St,New Lindsay,19179,Philadelphia,Amanda Greene,Greene Food Inc
+0057,179 Main St,Suzannetown,02667,Boston (Manchr),Robert Wagner,Wagner Food Inc
+0058,180 Main St,New Lindsay,19179,Philadelphia,Sandra Rosario,Rosario Food Inc
+0059,181 Main St,Lake Jamesmouth,11738,New York,Kelly Mora,Mora Food Inc
+0060,182 Main St,West William,15209,Pittsburgh,Annette Turner,Turner Food Inc
+0061,183 Main St,North Kevintown,93032,Los Angeles,Nathan Richards,Richards Food Inc
+0062,184 Main St,Seanside,93549,Los Angeles,Robert Robinson,Robinson Food Inc
+0063,185 Main St,Amymouth,10453,New York,Norman Martin,Martin Food Inc
+0064,186 Main St,South Fernandotown,22191,"Wash, DC (Hag)",Angie Coleman,Coleman Food Inc
+0065,187 Main St,New Lindsay,19179,Philadelphia,Anthony Jackson,Jackson Food Inc
+0066,188 Main St,North Kevintown,93032,Los Angeles,Karla Evans,Evans Food Inc
+0067,189 Main St,Lake Matthewshire,02205,Boston (Manchr),Natalie Meyer,Meyer Food Inc
+0068,190 Main St,Richardfurt,75117,Dallas-Ft.Worth,Sheila Singleton,Singleton Food Inc
+0069,191 Main St,Deannaland,60304,Chicago,Kristen Gomez,Gomez Food Inc
+0070,192 Main St,Lake Matthewshire,02205,Boston (Manchr),Michael Cook,Cook Food Inc
+0071,193 Main St,Lindaview,10178,New York,Brooke Young,Young Food Inc
+0072,194 Main St,Lake Jamesmouth,11738,New York,Christopher Morgan,Morgan Food Inc
+0073,195 Main St,Timothyview,75392,Dallas-Ft.Worth,Anthony Jackson,Jackson Food Inc
+0074,196 Main St,Port Kaylaville,19006,Philadelphia,April Gomez MD,Gomez Food Inc
+0075,197 Main St,Port Kaylaville,19006,Philadelphia,Valerie Rodriguez,Rodriguez Food Inc
+0076,198 Main St,Horneshire,19403,Philadelphia,Shane Kim,Kim Food Inc
+0077,199 Main St,West William,15209,Pittsburgh,Jackie Rodriguez,Rodriguez Food Inc
+0078,200 Main St,Reedbury,18930,Philadelphia,Valerie Rodriguez,Rodriguez Food Inc
+0079,201 Main St,New Lindsay,19179,Philadelphia,Norman Martin,Martin Food Inc
+0080,202 Main St,East Jennifermouth,16018,Pittsburgh,Corey Prince,Prince Food Inc
+0081,203 Main St,Christopherfort,75253,Dallas-Ft.Worth,Karla Evans,Evans Food Inc
+0082,204 Main St,Christopherfort,75253,Dallas-Ft.Worth,Cynthia Lee,Lee Food Inc
+0083,205 Main St,Haynesville,19802,Philadelphia,Crystal Wilson,Wilson Food Inc
+0084,206 Main St,Amymouth,10453,New York,Annette Turner,Turner Food Inc
+0085,207 Main St,Horneshire,19403,Philadelphia,April Gomez MD,Gomez Food Inc
+0086,208 Main St,West Joshuachester,55553,Mineapls-St. Pl,Shane Kim,Kim Food Inc
+0087,209 Main St,Greeneview,12409,New York,Anthony Jackson,Jackson Food Inc
+0088,210 Main St,East Jennifermouth,16018,Pittsburgh,Kelly Mora,Mora Food Inc
+0089,211 Main St,Lindaview,10178,New York,Angie Coleman,Coleman Food Inc
+0090,212 Main St,East Jennifermouth,16018,Pittsburgh,Robert Wagner,Wagner Food Inc
+0091,213 Main St,Lindaview,10178,New York,Karla Evans,Evans Food Inc
+0092,214 Main St,Lindaview,10178,New York,Alexis Jefferson,Jefferson Food Inc
+0093,215 Main St,Haynesville,19802,Philadelphia,Jasmine Myers,Myers Food Inc
+0094,216 Main St,Amymouth,10453,New York,Diane Daniels,Daniels Food Inc
+0095,217 Main St,Timothyview,75392,Dallas-Ft.Worth,Latoya House,House Food Inc
+0096,218 Main St,Richardfurt,75117,Dallas-Ft.Worth,Ms. April Bradley,April Food Inc
+0097,219 Main St,East Jennifermouth,16018,Pittsburgh,Crystal Wilson,Wilson Food Inc
+0098,220 Main St,Haynesville,19802,Philadelphia,Diane Daniels,Daniels Food Inc
+0099,221 Main St,Lindaview,10178,New York,Shane Kim,Kim Food Inc
+0100,222 Main St,West Joshuachester,55553,Mineapls-St. Pl,Christopher Morgan,Morgan Food Inc

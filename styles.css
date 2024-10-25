@@ -1,0 +1,34 @@
+/* styles.css */
+body {
+    background-color: #0D1B2A; /* Dark blue background */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #60abcd; /* Medium blue for headings */
+}
+
+.stButton>button {
+    background-color: #F4A261; /* Light orange button background */
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.stButton>button:hover {
+    background-color: #E76F51; /* Dark orange on hover */
+    color: black; /* Black text on hover */
+}
+
+.stTextInput>div>div>input {
+    border: 2px solid #415A77; /* Light blue border for text input */
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.stTextArea>div>textarea {
+    border: 2px solid #415A77; /* Light blue border for text area */
+    border-radius: 5px;
+    padding: 10px;
+}
