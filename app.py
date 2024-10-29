@@ -141,7 +141,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("./images/wb_logo_01.png", caption=None, width=200, use_column_width=False)
+st.image("./images/wb_logo_01.png", caption=None, width=300, use_column_width=False)
 st.title("Insights on Demand")
 
 # Inject custom CSS
@@ -178,12 +178,13 @@ if submit_button:
     else:
         st.write("Please enter a question.")
 
-# Display the log of questions and answers on the left side
+# Display the log of questions and answers on the right side
 st.sidebar.title("Question and Answer Log")
 for entry in st.session_state.qa_log:
-    st.sidebar.subheader("Question:")
-    st.sidebar.write(entry["question"])
-    st.sidebar.subheader("Executed Query:")
-    st.sidebar.code(entry["query"], language='sql')
-    st.sidebar.subheader("Summarized Answer:")
-    st.sidebar.write(entry["answer"])
+    with st.sidebar.expander(f"Question: {entry['question'][:30]}..."):
+        st.write("**Question:**")
+        st.write(entry["question"])
+        st.write("**Executed Query:**")
+        st.code(entry["query"], language='sql')
+        st.write("**Summarized Answer:**")
+        st.write(entry["answer"])
