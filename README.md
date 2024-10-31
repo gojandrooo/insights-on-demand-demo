@@ -10,7 +10,7 @@ To use the app, make sure dependencies are resolved (see requirements), navigate
 > python -m streamlit run app.py
 ```
 
-![examples](images/example-query.png)
+![examples](images/example_usage_01.png)
 
 
 The first time using, you will need to create the database using the `create_db` notebook. You will also need your own OpenAI keys stored in a .env file in root directory.
