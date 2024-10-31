@@ -141,7 +141,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-st.image("./images/wb_logo_01.png", caption=None, width=300, use_column_width=False)
+st.image("./images/wb_logo_02.2.png", caption=None, width=500, use_column_width=False)
 st.title("Insights on Demand")
 
 # Inject custom CSS

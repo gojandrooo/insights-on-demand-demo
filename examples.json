@@ -29,7 +29,11 @@
     }
     ,{
         "input": "what does the product data look like?",
-        "query": "SELECT * FROM product_margin LIMIT 5;"
+        "query": "SELECT * FROM product_margin LIMIT 25;"
+    }
+    ,{
+        "input": "display the product hierarchy?",
+        "query": "SELECT * FROM product_margin LIMIT 25;"
     }
     ,{
         "input": "what are the top 10 products sold in the Philadelphia DMA?",
@@ -50,5 +54,13 @@
     ,{
         "input": "what were the top 10 products sold in Los Angeles in September 2024?",
         "query": "SELECT product_margin.product_name, CAST(SUM(order_item.product_quantity) AS INTEGER) AS total_sold FROM order_item JOIN product_margin ON order_item.product_id = product_margin.product_id JOIN order_summary ON order_item.transaction_id = order_summary.transaction_id JOIN locations ON order_summary.store_id = locations.store_id WHERE locations.dma_name = 'Los Angeles' AND order_summary.date BETWEEN '2024-09-01' AND '2024-09-30' GROUP BY product_margin.product_name ORDER BY total_sold DESC LIMIT 10;"
+    }
+    ,{
+        "input": "when does breakfast start and end?",
+        "query": "SELECT daypart, STRFTIME('%H:%M', MIN(TIME('00:00', CAST(SUBSTR(minute_id, 1, 2) AS INTEGER) || ' hours', CAST(SUBSTR(minute_id, 4, 2) AS INTEGER) || ' minutes'))) AS start_time, STRFTIME('%H:%M', MAX(TIME('00:00', CAST(SUBSTR(minute_id, 1, 2) AS INTEGER) || ' hours', CAST(SUBSTR(minute_id, 4, 2) AS INTEGER) || ' minutes'))) AS end_time FROM dim_daypart WHERE daypart = 'Breakfast' GROUP BY daypart;"
+    }
+    ,{
+        "input": "what are the dayparts?",
+        "query": "SELECT DISTINCT(daypart) FROM dim_daypart ORDER BY CASE daypart WHEN 'Breakfast' THEN 1 WHEN 'Lunch' THEN 2 WHEN 'Snack' THEN 3 WHEN 'Dinner' THEN 4 WHEN 'Latenight' THEN 5 END;"
     }
 ]
